@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header {
+ background-image: url(greybg.jpg);
+ height: 100vh;
+ background-position: center;
+background-size: cover;
+
+}
+
+h1 {
+    font-size: 10rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: rgb(230, 225, 225);
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.9;
+    box-shadow: 2rem 2rem 8rem rgba(48, 47, 47,0.3);
+    padding: .2rem;
+    color: rgb(43, 43, 43);
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgb(43, 43, 43);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6rem;
+}
+
+.sidenav a {
+  padding: .8rem .8rem .8rem 3.2rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 2.5rem;
+  font-size: 3.6rem;
+  margin-left: 5rem;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 1.5rem;}
+  .sidenav a {font-size: 1.8rem;}
+}
+
+.nav-icon {
+  position: fixed;
+  font-size: 5rem;
+  cursor: pointer;
+  margin: 0 1rem 1rem 1rem;
+  color: rgb(43, 43, 43);
+}
+
+/* IMAGE GIRD */
+
+
+.row {
+  background-color: rgb(218, 218, 218);
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 .4rem;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 .4rem;
+}
+
+.column img {
+  margin-top: .6rem;
+  margin-bottom: .2rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(43, 43, 43);
+  text-align: center;
+}
+
+footer p {
+  color: #a1a0a0;
+  padding: 2rem;
+  font-size: 5rem;
+  font-family: sans-serif;
+}
